@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel = "stylesheet" type = "text/css" href = "static/css/main.css">
+<link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/main.css') }}">
+{% endblock %}
+
+{% block body %}
+
+
+<h1>Converter</h1>
+
+<div id = "celcius">
+<a href = "/celcius">Convert from celcius to fahrenheit</a>
+<form action = "{{url_for('index')}}" method = "GET">
+    <input type = "text" name = "cel">
+    <input type = "submit" value = "Convert">
+</form>
+</div>
+
+<div id = "add">
+    <a href = "/add">Add two numbers</a>
+    <form action = "{{url_for('adding')}}" method = "GET">
+        <input type = "text" name = "a">
+        <input type = "text" name = "b">
+        <input type = "submit" value = "Sum">
+    </form>
+
+</div>
+
+{% endblock %}
