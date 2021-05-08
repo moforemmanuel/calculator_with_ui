@@ -20,7 +20,7 @@
                 <div class="container col-md-6 mx-auto text-center">
                     <h1 class="display-3">Welcome</h1>
                     <hr class="my-2">
-                    <div class="dropdown">
+                    <div class="dropdown" id="start_menu">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select an operation
@@ -35,7 +35,7 @@
                     </div>
 
                     <!-- For trigonometric operations, choose the mode, then the trigonometric operation-->
-                    <div class="dropdown">
+                    <div class="dropdown d-none" id="Trig1">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a mode
@@ -43,12 +43,10 @@
                         <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Degrees</a>
                             <a class="dropdown-item" href="#">Radians</a>
-                         
                         </div>
                     </div>
 
-                    
-                    <div class="dropdown">
+                    <div class="dropdown d-none" id="Trig2">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a trigonometric operation
@@ -56,12 +54,11 @@
                         <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Trigonometric Functions</a>
                             <a class="dropdown-item" href="#">Inverse Trigonometric Functions</a>
-                            
                         </div>
                     </div>
 
                     <!-- For hyperbolic operations, choose either hyp or inverse hyp functions-->
-                    <div class="dropdown">
+                    <div class="dropdown d-none">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a hyperbolic operation
@@ -69,12 +66,11 @@
                         <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Hyperbolic Functions</a>
                             <a class="dropdown-item" href="#">Inverse Hyperbolic Functions</a>
-                            
                         </div>
                     </div>
 
                     <!-- For conversions, choose a conversion operation and fill the required form -->
-                    <div class="dropdown">
+                    <div class="dropdown d-none">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a conversion operation
@@ -83,11 +79,9 @@
                             <a class="dropdown-item" href="#">Number Systems</a>
                             <a class="dropdown-item" href="#">Temperature</a>
                             <a class="dropdown-item" href="#">Angles</a>
-                          
                         </div>
                     </div>
 
-                   
                     <!-- <div class="dropdown open">
 
                         <select id="name">
@@ -105,7 +99,7 @@
         </div>
 
         <!-- Buttons -->
-        <div class="row">
+        <div class="row d-none" id="calc-dis">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -201,8 +195,27 @@
             // $("#name").on('change', function () {
             //     alert($(this).val());
             // });
-            $('.dropdown-item').on('click', (e) => {
-                alert($(e.target).text());
+            var choice = "";
+            var mode = "";
+            var operation = "";
+
+            $('#start_menu .dropdown-item').on('click', (e) => {
+                choice = $(e.target).text();
+                // start menu
+                switch (choice) {
+                    case "Trigonometric Operations":
+                        $('#Trig1').removeClass("d-none");
+                        // select mode
+                        $('#Trig1 .dropdown-item').on('click', (e) => {
+                            mode = $(e.target).text();
+                            $('#Trig2').removeClass("d-none");
+                            // select operation
+                            $('#Trig2 .dropdown-item').on('click', (e) => {
+                                operation = $(e.target).text();
+                                $('#calc-dis').removeClass("d-none");
+                            })
+                        })
+                }
             })
         });
     </script>
