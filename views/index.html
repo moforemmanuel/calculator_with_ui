@@ -20,18 +20,30 @@
                 <div class="container col-md-6 mx-auto text-center">
                     <h1 class="display-3">Welcome</h1>
                     <hr class="my-2">
-                    <div class="dropdown open">
-                
+                    <div class="dropdown">
+                        <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
                         </button>
-                         <select id = "name">
-                            <option value = "" disable selected hidden style="font-weight:100">Choose and operation </option>
-                            <option value = "Basic Operations">Basic Operation</option>
-                            <option value = "Trigonometric Operations">Trigonometric Operations</option>
-                            <option value = "Hyperbolic Operations">Hyperbolic Operations</option>
-                            <option value = "Conversion Operations">Conversion Operations</option>
-                        </select>
-                        
+                        <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Basic Operations</a>
+                            <a class="dropdown-item" href="#">Trigonometric Operations</a>
+                            <a class="dropdown-item" href="#">Hyperbolic Operations</a>
+                            <a class="dropdown-item" href="#">Conversion Operations</a>
+                        </div>
                     </div>
+                    <!-- <div class="dropdown open">
+
+                        <select id="name">
+                            <option value="" disable selected hidden style="font-weight:100">Choose and operation
+                            </option>
+                            <option value="Basic Operations">Basic Operation</option>
+                            <option value="Trigonometric Operations">Trigonometric Operations</option>
+                            <option value="Hyperbolic Operations">Hyperbolic Operations</option>
+                            <option value="Conversion Operations">Conversion Operations</option>
+                        </select>
+
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -129,13 +141,14 @@
     </script>
 
     <script>
-
-        $(document).ready(function(){
-            $("#name").on('change',function(){
-                alert($(this).val());
-            });
+        $(document).ready(function () {
+            // $("#name").on('change', function () {
+            //     alert($(this).val());
+            // });
+            $('.dropdown-item').on('click', (e) => {
+                alert($(e.target).text());
+            })
         });
-
     </script>
 
 </body>
