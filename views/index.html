@@ -21,15 +21,16 @@
                     <h1 class="display-3">Welcome</h1>
                     <hr class="my-2">
                     <div class="dropdown open">
-                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="triggerId"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Please select an operation
+                
                         </button>
-                        <div class="dropdown-menu w-100 text-center" aria-labelledby="triggerId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                            <a class="dropdown-item" href="#">Action 3</a>
-                        </div>
+                         <select id = "name">
+                            <option value = "" disable selected hidden style="font-weight:100">Choose and operation </option>
+                            <option value = "Basic Operations">Basic Operation</option>
+                            <option value = "Trigonometric Operations">Trigonometric Operations</option>
+                            <option value = "Hyperbolic Operations">Hyperbolic Operations</option>
+                            <option value = "Conversion Operations">Conversion Operations</option>
+                        </select>
+                        
                     </div>
                 </div>
             </div>
@@ -126,6 +127,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#name").on('change',function(){
+                alert($(this).val());
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>
