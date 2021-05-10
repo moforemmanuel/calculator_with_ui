@@ -58,7 +58,7 @@
                     </div>
 
                     <!-- For hyperbolic operations, choose either hyp or inverse hyp functions-->
-                    <div class="dropdown d-none" id = "Hyperbolic_operations">
+                    <div class="dropdown d-none" id="Hyperbolic_operations">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a hyperbolic operation
@@ -70,7 +70,7 @@
                     </div>
 
                     <!-- For conversions, choose a conversion operation and fill the required form -->
-                    <div class="dropdown d-none" id = "Conversion_operations">
+                    <div class="dropdown d-none" id="Conversion_operations">
                         <button class="btn btn-primary w-100 dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select a conversion operation
@@ -81,25 +81,12 @@
                             <a class="dropdown-item" href="#">Angles</a>
                         </div>
                     </div>
-
-                    <!-- <div class="dropdown open">
-
-                        <select id="name">
-                            <option value="" disable selected hidden style="font-weight:100">Choose and operation
-                            </option>
-                            <option value="Basic Operations">Basic Operation</option>
-                            <option value="Trigonometric Operations">Trigonometric Operations</option>
-                            <option value="Hyperbolic Operations">Hyperbolic Operations</option>
-                            <option value="Conversion Operations">Conversion Operations</option>
-                        </select>
-
-                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- Basic Buttons -->
-        <div class="row d-none" id="basic_display">
+        <div class="row d-none calc-dis" id="basic_display">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -179,7 +166,7 @@
                             <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
                         </div>
                     </div>
-                    
+
 
                     <!-- row 3 -->
                     <div class="row">
@@ -247,7 +234,7 @@
         </div>
 
         <!-- Trigonometric Buttons -->
-        <div class="row d-none" id="trigonometric_display">
+        <div class="row d-none calc-dis" id="trigonometric_display">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -327,7 +314,7 @@
                             <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
                         </div>
                     </div>
-                    
+
 
                     <!-- row 3 -->
                     <div class="row">
@@ -385,8 +372,8 @@
             </div>
         </div>
 
-         <!-- Inverse Trigonometric Buttons -->
-         <div class="row d-none" id="inverse_trigonometric_display">
+        <!-- Inverse Trigonometric Buttons -->
+        <div class="row d-none calc-dis" id="inverse_trigonometric_display">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -466,7 +453,7 @@
                             <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
                         </div>
                     </div>
-                    
+
 
                     <!-- row 3 -->
                     <div class="row">
@@ -525,7 +512,7 @@
         </div>
 
         <!-- Hyperbolic Buttons -->
-        <div class="row d-none" id="hyperbolic_display">
+        <div class="row d-none calc-dis" id="hyperbolic_display">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -605,7 +592,7 @@
                             <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
                         </div>
                     </div>
-                    
+
 
                     <!-- row 3 -->
                     <div class="row">
@@ -664,7 +651,7 @@
         </div>
 
         <!-- Inverse Hyperbolic Buttons -->
-        <div class="row d-none" id="inverse_hyperbolic_display">
+        <div class="row d-none calc-dis" id="inverse_hyperbolic_display">
             <div class="col-md-6 mx-auto">
                 <div class="container">
                     <!-- screen -->
@@ -744,7 +731,7 @@
                             <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
                         </div>
                     </div>
-                    
+
 
                     <!-- row 3 -->
                     <div class="row">
@@ -830,11 +817,19 @@
                 // start menu
                 switch (choice) {
                     case "Basic Operations":
-                    $('#basic_display').removeClass("d-none");
-                    break;
-                       
+                        $('.calc-dis').addClass('d-none');
+                        $('.dropdown').addClass('d-none');
+                        $('#start_menu').removeClass('d-none');
+
+                        $('#basic_display').removeClass("d-none");
+                        break;
+
 
                     case "Trigonometric Operations":
+                        $('.calc-dis').addClass('d-none');
+                        $('.dropdown').addClass('d-none');
+                        $('#start_menu').removeClass('d-none');
+
                         $('#Trigonometric_mode').removeClass("d-none");
                         // select mode
                         $('#Trigonometric_mode .dropdown-item').on('click', (e) => {
@@ -843,46 +838,40 @@
                             // select trigonometric operation
 
                             $('#Trigonometric_operations .dropdown-item').on('click', (e) => {
-                                operation = $(e.target).text(); 
+                                operation = $(e.target).text();
 
-                                if (operation == "Trigonometric Functions"){
+                                if (operation == "Trigonometric Functions") {
                                     $('#trigonometric_display').removeClass("d-none");
+                                } else if (operation ==
+                                    "Inverse Trigonometric Functions") {
+                                    $('#inverse_trigonometric_display').removeClass(
+                                        "d-none");
                                 }
-
-                                else if(operation == "Inverse Trigonometric Functions"){
-                                    $('#inverse_trigonometric_display').removeClass("d-none");
-                                }
-
-                            
-
                             })
                         })
                         break;
 
                     case "Hyperbolic Operations":
+                        $('.calc-dis').addClass('d-none');
+                        $('.dropdown').addClass('d-none');
+                        $('#start_menu').removeClass('d-none');
+
                         $('#Hyperbolic_operations').removeClass("d-none");
                         // select hyperbolic operation
                         $('#Hyperbolic_operations .dropdown-item').on('click', (e) => {
                             operation = $(e.target).text();
 
-                            if (operation == "Hyperbolic Functions"){
+                            if (operation == "Hyperbolic Functions") {
                                 $('#hyperbolic_display').removeClass("d-none");
-                            }
-
-                            else if(operation == "Inverse Hyperbolic Functions"){
+                            } else if (operation == "Inverse Hyperbolic Functions") {
                                 $('#inverse_hyperbolic_display').removeClass("d-none");
                             }
-                            
+
                         })
                         break;
 
                     default:
                         alert("Invalid operation");
-
-
-
-
-                    
                 }
             })
         });
