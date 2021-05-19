@@ -3,39 +3,32 @@ from sympy import *
 from string import *
 from itertools import *
 from time import *
-
+import os
 from flask import Flask,request,render_template,url_for
 
-app = Flask(__name__)
+template_dir = os.path.abspath('/home/manuel/Desktop/project/calculator_with_ui/views')
+app = Flask(__name__, template_folder = template_dir)
 
 @app.route('/')
 def index():
-    operation = request.args.get("","")
-    if cel:
-        fah = ctf(cel)
-    else:
-        fah = ""
-    return render_template("index.html") + "Fahrenheit : " + fah
+    return render_template("index.html")
 
-@app.route("/add")
-def adding():
-    a = request.args.get("a","")
-    b = request.args.get("b","")
-    sum = add(a,b)
-    if sum:
-        sum = add(a,b)
-    else:
-        sum = ""
-    return render_template("index.html") + "SUM : " + sum
-def add(a,b):
-    return a + b
+""" @app.route('/basic_operations')
+def basic_operations():
+    return None
 
-def ctf(cel):
-    try:
-        fah= round(float(cel)*9/5 + 32,3)
-        return str(fah)
-    except ValueError:
-        return "Invalid input"
+@app.route('/trigonometric_operations')
+def trigonometric_operations():
+    return None
+
+@app.route('/hyperbolic_operations')
+def hyperbolic_operations():
+    return None
+
+@app.route('/conversion_operations')
+def conversion_operations():
+    return None  """
+
         
 if __name__ == "__main__":
     app.run(host = '127.0.0.1', port = 8080, debug = True)

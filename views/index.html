@@ -6,11 +6,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>Calculator API</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <link rel ="stylesheet" href = "style.css">
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+    </head>
 
 <body>
     <div class="container-fluid">
@@ -99,73 +103,72 @@
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="7">
+                            <button class="btn btn-light btn-outline-primary w-100" >7</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="8">
+                            <button class="btn btn-light btn-outline-primary w-100" >8</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="9">
+                            <button class="btn btn-light btn-outline-primary w-100" >9</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&plus;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&plus;</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&minus;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&minus;</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&times;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&times;</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&divide;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&divide;</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&lpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&lpar;</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&rpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&rpar;</button>
                         </div>
                     </div>
 
                     <!-- row 2 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="4">
+                            <button class="btn btn-light btn-outline-primary w-100" >4</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="5">
+                            <button class="btn btn-light btn-outline-primary w-100" >5</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="6">
+                            <button class="btn btn-light btn-outline-primary w-100" >6</button>
                         </div>
                         <div class="col px-0">
                             <button class="btn btn-light btn-outline-primary w-100">
-                                <math>
-                                    <mrow>
-                                        <mrow>
-                                            <msup>
-                                                <mi>x</mi>
-                                                <mn>2</mn>
-                                            </msup>
-                                        </mrow>
-                                    </mrow>
-                                </math>
+                              x<sup>2</sup>
                             </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100">
+                                x<sup>y</sup>
+                              </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&radic;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&radic;x</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100">
+                                <sup>x</sup>&radic;y
+                              </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100">
+                                e<sup>x</sup>
+                              </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100">
+                                10<sup>x</sup>
+                              </button>
                         </div>
                     </div>
 
@@ -173,62 +176,71 @@
                     <!-- row 3 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="1">
+                            <button class="btn btn-light btn-outline-primary w-100" >1</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="2">
+                            <button class="btn btn-light btn-outline-primary w-100" >2</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="3">
+                            <button class="btn btn-light btn-outline-primary w-100" >3</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" >
+                                log(x)
+                            </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100">
+                                log<sub>x</sub>y
+                              </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" >ln(x)</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" >n!</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" >
+                                <sup>n</sup>P<sub>r</sub>
+                            </button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" >
+                                <sup>n</sup>C<sub>r</sub>
+                            </button>
                         </div>
+                       
                     </div>
 
                     <!-- row 4 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&dot;">
+                            <button class="btn btn-light btn-outline-primary w-100" >.</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="0">
+                            <button class="btn btn-light btn-outline-primary w-100" >0</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="CA">
+                            <button class="btn btn-light btn-outline-primary w-100" >CA</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="mean( )">
+                            <button class="btn btn-light btn-outline-primary w-100" >mean()</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="median( )">
+                            <button class="btn btn-light btn-outline-primary w-100" >med()</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="mode( )">
+                            <button class="btn btn-light btn-outline-primary w-100" >mode()</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="max( )">
+                            <button class="btn btn-light btn-outline-primary w-100" >max()</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="min( )">
+                            <button class="btn btn-light btn-outline-primary w-100" >min()</button>
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&equals;">
+                            <button class="btn btn-light btn-outline-primary w-100" >&equals;</button>
                         </div>
                     </div>
                 </div>
@@ -242,54 +254,54 @@
                     <!-- screen -->
                     <div class="row">
                         <div class="col-12 px-0 my-3">
-                            <input class="w-100 form-control text-primary text-right" role="textbox" disabled>
+                            <button class="w-100 form-control text-primary text-right" role="textbox" disabled>
                         </div>
                     </div>
 
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="7">
+                            <button class="btn btn-light btn-outline-primary w-100" value="7">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="8">
+                            <button class="btn btn-light btn-outline-primary w-100" value="8">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="9">
+                            <button class="btn btn-light btn-outline-primary w-100" value="9">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&plus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&plus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&minus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&minus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&times;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&times;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&divide;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&divide;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&lpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&lpar;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&rpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&rpar;">
                         </div>
                     </div>
 
                     <!-- row 2 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="4">
+                            <button class="btn btn-light btn-outline-primary w-100" value="4">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="5">
+                            <button class="btn btn-light btn-outline-primary w-100" value="5">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="6">
+                            <button class="btn btn-light btn-outline-primary w-100" value="6">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="<math>
+                            <button class="btn btn-light btn-outline-primary w-100" value="<math>
                                 <mrow>
                                     <mrow>
                                         <msup>
@@ -301,19 +313,19 @@
                             </math>">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&radic;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&radic;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                     </div>
 
@@ -321,53 +333,53 @@
                     <!-- row 3 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="1">
+                            <button class="btn btn-light btn-outline-primary w-100" value="1">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="2">
+                            <button class="btn btn-light btn-outline-primary w-100" value="2">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="3">
+                            <button class="btn btn-light btn-outline-primary w-100" value="3">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="sin( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="sin( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="cos( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="cos( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="tan( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="tan( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="cosec( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="cosec( )">
                         </div>
                     </div>
 
                     <!-- row 4 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&dot;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&dot;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="0">
+                            <button class="btn btn-light btn-outline-primary w-100" value="0">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="CA">
+                            <button class="btn btn-light btn-outline-primary w-100" value="CA">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="sec( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="sec( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="cot( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="cot( )">
                         </div>
                         <div class="col-5 px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&equals;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&equals;">
                         </div>
                     </div>
                 </div>
@@ -381,54 +393,54 @@
                     <!-- screen -->
                     <div class="row">
                         <div class="col-12 px-0 my-3">
-                            <input class="w-100 form-control text-primary text-right" role="textbox" disabled>
+                            <button class="w-100 form-control text-primary text-right" role="textbox" disabled>
                         </div>
                     </div>
 
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="7">
+                            <button class="btn btn-light btn-outline-primary w-100" value="7">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="8">
+                            <button class="btn btn-light btn-outline-primary w-100" value="8">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="9">
+                            <button class="btn btn-light btn-outline-primary w-100" value="9">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&plus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&plus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&minus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&minus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&times;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&times;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&divide;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&divide;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&lpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&lpar;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&rpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&rpar;">
                         </div>
                     </div>
 
                     <!-- row 2 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="4">
+                            <button class="btn btn-light btn-outline-primary w-100" value="4">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="5">
+                            <button class="btn btn-light btn-outline-primary w-100" value="5">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="6">
+                            <button class="btn btn-light btn-outline-primary w-100" value="6">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="<math>
+                            <button class="btn btn-light btn-outline-primary w-100" value="<math>
                                 <mrow>
                                     <mrow>
                                         <msup>
@@ -440,19 +452,19 @@
                             </math>">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&radic;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&radic;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                     </div>
 
@@ -460,53 +472,53 @@
                     <!-- row 3 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="1">
+                            <button class="btn btn-light btn-outline-primary w-100" value="1">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="2">
+                            <button class="btn btn-light btn-outline-primary w-100" value="2">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="3">
+                            <button class="btn btn-light btn-outline-primary w-100" value="3">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="asin( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="asin( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="acos( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="acos( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="atan( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="atan( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="acosec( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="acosec( )">
                         </div>
                     </div>
 
                     <!-- row 4 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&dot;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&dot;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="0">
+                            <button class="btn btn-light btn-outline-primary w-100" value="0">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="CA">
+                            <button class="btn btn-light btn-outline-primary w-100" value="CA">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="asec( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="asec( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="acot( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="acot( )">
                         </div>
                         <div class="col-5 px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&equals;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&equals;">
                         </div>
                     </div>
                 </div>
@@ -520,54 +532,54 @@
                     <!-- screen -->
                     <div class="row">
                         <div class="col-12 px-0 my-3">
-                            <input class="w-100 form-control text-primary text-right" role="textbox" disabled>
+                            <button class="w-100 form-control text-primary text-right" role="textbox" disabled>
                         </div>
                     </div>
 
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="7">
+                            <button class="btn btn-light btn-outline-primary w-100" value="7">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="8">
+                            <button class="btn btn-light btn-outline-primary w-100" value="8">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="9">
+                            <button class="btn btn-light btn-outline-primary w-100" value="9">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&plus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&plus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&minus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&minus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&times;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&times;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&divide;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&divide;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&lpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&lpar;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&rpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&rpar;">
                         </div>
                     </div>
 
                     <!-- row 2 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="4">
+                            <button class="btn btn-light btn-outline-primary w-100" value="4">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="5">
+                            <button class="btn btn-light btn-outline-primary w-100" value="5">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="6">
+                            <button class="btn btn-light btn-outline-primary w-100" value="6">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="<math>
+                            <button class="btn btn-light btn-outline-primary w-100" value="<math>
                                 <mrow>
                                     <mrow>
                                         <msup>
@@ -579,19 +591,19 @@
                             </math>">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&radic;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&radic;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                     </div>
 
@@ -599,53 +611,53 @@
                     <!-- row 3 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="1">
+                            <button class="btn btn-light btn-outline-primary w-100" value="1">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="2">
+                            <button class="btn btn-light btn-outline-primary w-100" value="2">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="3">
+                            <button class="btn btn-light btn-outline-primary w-100" value="3">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="sinh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="sinh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="cosh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="cosh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="tanh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="tanh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="cosech( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="cosech( )">
                         </div>
                     </div>
 
                     <!-- row 4 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&dot;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&dot;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="0">
+                            <button class="btn btn-light btn-outline-primary w-100" value="0">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="CA">
+                            <button class="btn btn-light btn-outline-primary w-100" value="CA">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="sech( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="sech( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="coth( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="coth( )">
                         </div>
                         <div class="col-5 px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&equals;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&equals;">
                         </div>
                     </div>
                 </div>
@@ -659,54 +671,54 @@
                     <!-- screen -->
                     <div class="row">
                         <div class="col-12 px-0 my-3">
-                            <input class="w-100 form-control text-primary text-right" role="textbox" disabled>
+                            <button class="w-100 form-control text-primary text-right" role="textbox" disabled>
                         </div>
                     </div>
 
                     <!-- row 1 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="7">
+                            <button class="btn btn-light btn-outline-primary w-100" value="7">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="8">
+                            <button class="btn btn-light btn-outline-primary w-100" value="8">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="9">
+                            <button class="btn btn-light btn-outline-primary w-100" value="9">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&plus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&plus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&minus;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&minus;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&times;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&times;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&divide;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&divide;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&lpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&lpar;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&rpar;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&rpar;">
                         </div>
                     </div>
 
                     <!-- row 2 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="4">
+                            <button class="btn btn-light btn-outline-primary w-100" value="4">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="5">
+                            <button class="btn btn-light btn-outline-primary w-100" value="5">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="6">
+                            <button class="btn btn-light btn-outline-primary w-100" value="6">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="<math>
+                            <button class="btn btn-light btn-outline-primary w-100" value="<math>
                                 <mrow>
                                     <mrow>
                                         <msup>
@@ -718,19 +730,19 @@
                             </math>">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&radic;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&radic;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                     </div>
 
@@ -738,53 +750,53 @@
                     <!-- row 3 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="1">
+                            <button class="btn btn-light btn-outline-primary w-100" value="1">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="2">
+                            <button class="btn btn-light btn-outline-primary w-100" value="2">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="3">
+                            <button class="btn btn-light btn-outline-primary w-100" value="3">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value=" ">
+                            <button class="btn btn-light btn-outline-primary w-100" value=" ">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="arsinh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="arsinh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="arcosh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="arcosh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="artanh( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="artanh( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="arcosech( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="arcosech( )">
                         </div>
                     </div>
 
                     <!-- row 4 -->
                     <div class="row">
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="&dot;">
+                            <button class="btn btn-light btn-outline-primary w-100" value="&dot;">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="0">
+                            <button class="btn btn-light btn-outline-primary w-100" value="0">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="CA">
+                            <button class="btn btn-light btn-outline-primary w-100" value="CA">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-primary w-100" role="button" value="arsech( )">
+                            <button class="btn btn-light btn-outline-primary w-100" value="arsech( )">
                         </div>
                         <div class="col px-0">
-                            <input class="btn btn-light btn-outline-success w-100" role="button" value="arcoth( )">
+                            <button class="btn btn-light btn-outline-success w-100" value="arcoth( )">
                         </div>
                         <div class="col-5 px-0">
-                            <input class="btn btn-light btn-outline-danger w-100" role="button" value="&equals;">
+                            <button class="btn btn-light btn-outline-danger w-100" value="&equals;">
                         </div>
                     </div>
                 </div>
