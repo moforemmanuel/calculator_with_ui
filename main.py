@@ -13,7 +13,7 @@ app = Flask(__name__, template_folder = template_dir)
 def index():
     return render_template("index.html")
 
-""" @app.route('/basic_operations')
+@app.route('/basic_operations')
 def basic_operations():
     return None
 
@@ -27,7 +27,7 @@ def hyperbolic_operations():
 
 @app.route('/conversion_operations')
 def conversion_operations():
-    return None  """
+    return None  
 
         
 if __name__ == "__main__":
