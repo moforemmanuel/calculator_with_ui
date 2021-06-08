@@ -7,8 +7,8 @@ from time import *
 
 array = []
 
-def inp(n):
-	n = int(input("How many numbers do you wish to operate on? : \n"))
+# def inp(n):
+# 	n = int(input("How many numbers do you wish to operate on? : \n"))
 	
 def nums(array,n):
 	
@@ -1052,10 +1052,10 @@ def main():
 				print("Invalid option \n")
 				continue
 
-if __name__ == "__main__":
-	main()
-else:
-	add()
+# if __name__ == "__main__":
+# 	main()
+# else:
+# 	add()
 		
 
 
