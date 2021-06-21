@@ -59,6 +59,25 @@ def multiply(array,n):
 def rad(ans):
 	return (ans*180)/pi
 
+def acosec(n):
+	return asin(1/n)
+
+def asec(n):
+	return acos(1/n)
+
+def acot(n):
+	return atan(1/n)
+
+def acosech(n):
+	return asinh(1/n)
+
+def asech(n):
+	return acosh(1/n)
+
+def acoth(n):
+	return atanh(1/n)
+
+
 def divide(array,n):
 	
 	div = 1
@@ -71,9 +90,18 @@ def divide(array,n):
 	else:
 		return "Error\n"
 
-	
-		
-	
+
+def factorial(n):
+	if n == 0 or n == 1:
+		return 1
+	else:
+		return n*factorial(n-1)
+
+def permutation(n,r):
+	return (factorial(n)/factorial(n-r))		
+
+def combination(n,r):
+	return (permutation(n,r)/factorial(r))	
 	
 def mean(array,size):
 	sum=0
@@ -81,7 +109,7 @@ def mean(array,size):
 		sum=sum+array[i]
 		i+=1
 	av=(sum)/size
-	print("Mean is : ", av,  "\n")
+	return av
 	
 
 def minimum(array,n):
@@ -89,14 +117,14 @@ def minimum(array,n):
 		for i in range(1,n):
 			if array[i]<min:
 				min=array[i]
-		print("Minimum element is : \n",min, "\n")
+		return min
 		
 def maximum(array,n):
 		max=array[0]
 		for i in range(1,n):
 			if array[i]>max:
 				max=array[i]
-		print("Maximum element is : \n",max,"\n")
+		return max
 
 
 def bubblesort(array,n):
@@ -106,18 +134,18 @@ def bubblesort(array,n):
 					temp = array[j]
 					array[j] = array[j+1]
 					array[j+1] = temp
-		print("Sorted list is : ",array,"\n")
+		return array
 
 def median(array,n):
 		bubblesort(array,n)
-		middle = n/2
-		if middle%2!=0:
-			index = int(middle)
-			print("Median is : ",array[index],"\n")
-		else :
+		middle = n//2
+		if n%2 != 0:
+			return array[middle]
+		else:
 			half=int(middle)
 			med=(array[half]+array[half-1])/2
-			print("Median is : ",med,"\n")
+			return med
+			
 			
 			
 def mode(input):
@@ -131,18 +159,18 @@ def mode(input):
             num.append(i)
     
     if(num == input):
-        return "no mod found"
+        return None
 
     num = list(set(num))
 
     if(len(num) < 1):
-        return "no mod found"
+        return None
     
     if(len(num)==1):
-        	print("Mode is : ",num,"\n")
+        	return num
     
     if(len(num)>1):
-    		print("Modes are : ",num,"\n")
+    		return num
 			
 			
 def main():		
@@ -907,7 +935,7 @@ def main():
 								print(f"{temp} Kelvin = {ans} celsius \n")
 							if S2 == "ii":
 								ans = (temp - 273.15)*(9/5) + 32
-								print(f"{temp} Kelvin = {ans} celsius \n")
+								print(f"{temp} Kelvin = {ans} Fah \n")
 							if S2 == "iii":
 								ans = temp*(5/9)
 								print(f"{temp} Kelvin = {ans} Rankine")
